@@ -87,12 +87,13 @@
                 </button>
               
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nextjs</a></li>
-                  <li><a class="dropdown-item" href="#">ReactRedux</a></li>
-                  <li><a class="dropdown-item" href="#">Formik</a></li>
-                  <li><a class="dropdown-item" href="#">React Query</a></li>
-                  <li><a class="dropdown-item" href="#">React vertualize large list render</a></li>
-                  <li><a class="dropdown-item" href="#">React Spring for small animation</a></li>
+                  <li><a class="dropdown-item" href="https://nextjs.org/" target="_blank">Nextjs</a></li>
+                  <li><a class="dropdown-item" href="https://react-redux.js.org/" target="_blank">ReactRedux</a></li>
+                  <li><a class="dropdown-item" href="https://formik.org/" target="_blank">Formik</a></li>
+                  <li><a class="dropdown-item" href="https://tanstack.com/query/latest" target="_blank">React Query</a></li>
+                  <li><a class="dropdown-item" href="https://www.npmjs.com/package/react-virtualized" target="_blank">React vertualize large list render</a></li>
+                  <li><a class="dropdown-item" href="https://www.react-spring.dev/" target="_blank">React Spring for small animation</a></li>
+                  <li><a class="dropdown-item" href="./ReactNative.html" target="_blank">React Native For Web Applications</a></li>
                   
                 </ul>
               </div>
@@ -265,9 +266,88 @@
 
 
   </ul>
+
+  <hr class="solid">
+  <!-- THREE LAYER ARCITECTURE -->
+  <h2>Three Layer Architecture Of web Application in advance JAVA</h2>
+  <ul>
+    <li>Presentation Layer</li>
+    <li>Business Logic Layer</li>
+    <li>Data access Layer</li>
+  </ul>
+  <img src="./assets/images/3-tier_architecture3.png" alt="3tier-archiImage">
+  <button><a href="">Notes</a></button>
+  <br>
   
-  
-  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/v4IomufrFTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<hr class="solid">
+<h2>Another concept-What is three-tier architecture?</h2>
+<p>Three-tier architecture is a well-established software application architecture that organizes applications into three logical and physical computing tiers: the presentation tier, or user interface; the application tier, where data is processed; and the data tier, where the data associated with the application is stored and managed.</p>
+<p>The chief benefit of three-tier architecture is that because each tier runs on its own infrastructure, each tier can be developed simultaneously by a separate development team, and can be updated or scaled as needed without impacting the other tiers.</p>
+<p>For decades three-tier architecture was the prevailing architecture for client-server applications. Today, most three-tier applications are targets for modernization, using cloud-native technologies such as containers and microservices, and for migration to the cloud.</p>
+<h2>The three tiers in detail</h2>
+<h3>Presentation tier</h3>
+<p>The presentation tier is the user interface and communication layer of the application, where the end user interacts with the application. Its main purpose is to display information to and collect information from the user. This top-level tier can run on a web browser, as desktop application, or a graphical user interface (GUI), for example. Web presentation tiers are usually developed using HTML, CSS and JavaScript. Desktop applications can be written in a variety of languages depending on the platform.</p>
+<h3>Application tier</h3>
+<p>The application tier, also known as the logic tier or middle tier, is the heart of the application. In this tier, information collected in the presentation tier is processed - sometimes against other information in the data tier - using business logic, a specific set of business rules. The application tier can also add, delete or modify data in the data tier. </p>
+<p>The application tier is typically developed using Python, Java, Perl, PHP or Ruby, and communicates with the data tier using API calls. </p>
+<h3>Data tier</h3>
+<p>The data tier, sometimes called database tier, data access tier or back-end, is where the information processed by the application is stored and managed. This can be a relational database management system such as PostgreSQL, MySQL, MariaDB, Oracle, DB2, Informix or Microsoft SQL Server, or in a NoSQL Database server such as Cassandra, CouchDB or MongoDB. </p>
+<p>In a three-tier application, all communication goes through the application tier. The presentation tier and the data tier cannot communicate directly with one another.</p>
+<h3>Tier vs. layer</h3>
+<p>In discussions of three-tier architecture, layer is often used interchangeably – and mistakenly – for tier, as in 'presentation layer' or 'business logic layer.' 
+
+</p>
+<p>They aren't the same. A 'layer' refers to a functional division of the software, but a 'tier' refers to a functional division of the software that runs on infrastructure separate from the other divisions. The Contacts app on your phone, for example, is a three-layer application, but a single-tier application, because all three layers run on your phone.
+
+</p>
+<p>The difference is important, because layers can't offer the same benefits as tiers.
+
+</p>
+<h2>Benefits of three-tier architecture</h2>
+<p>Again, the chief benefit of three-tier architecture its logical and physical separation of functionality. Each tier can run on a separate operating system and server platform - e.g., web server, application server, database server - that best fits its functional requirements. And each tier runs on at least one dedicated server hardware or virtual server, so the services of each tier can be customized and optimized without impact the other tiers. 
+
+</p>
+<p>Other benefits (compared to single- or two-tier architecture) include:
+
+</p>
+<li>Faster development: Because each tier can be developed simultaneously by different teams, an organization can bring the application to market faster, and programmers can use the latest and best languages and tools for each tier.</li>
+<li>Improved scalability: Any tier can be scaled independently of the others as needed.</li>
+<li>Improved security: Because the presentation tier and data tier can't communicate directly, a well-designed application tier can function as a sort of internal firewall, preventing SQL injections and other malicious exploits.
+</li>
+<li>Improved reliability: An outage in one tier is less likely to impact the availability or performance of the other tiers.
+</li>
+<h2>Three-tier application in web development</h2>
+<p>In web development, the tiers have different names but perform similar functions:
+
+</p>
+<p>The web server is the presentation tier and provides the user interface. This is usually a web page or web site, such as an ecommerce site where the user adds products to the shopping cart, adds payment details or creates an account. The content can be static or dynamic, and is usually developed using HTML, CSS and Javascript.
+</p>
+<p>The application server corresponds to the middle tier, housing the business logic used to process user inputs. To continue the ecommerce example, this is the tier that queries the inventory database to return product availability, or adds details to a customer's profile. This layer often developed using Python, Ruby or PHP and runs a framework such as e Django, Rails, Symphony or ASP.NET, for example.
+</p>
+<p>The database server is the data or backend tier of a web application. It runs on database management software, such as MySQL, Oracle, DB2 or PostgreSQL, for example.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
     </body>
 </html>
